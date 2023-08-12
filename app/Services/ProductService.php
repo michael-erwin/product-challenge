@@ -3,8 +3,10 @@
 namespace App\Services;
 
 use App\Models\Product;
+use App\Interface\ProductInterface;
 
-class ProductService {
+class ProductService implements ProductInterface
+{
     public function getAll($perPage)
     {
         return Product::paginate($perPage);
