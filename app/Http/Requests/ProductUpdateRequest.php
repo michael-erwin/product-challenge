@@ -27,4 +27,5 @@ class ProductUpdateRequest extends FormRequest
             'price' => ['required', 'integer'],
             'sku' => ['required', 'min:3', 'max:120'],
         ];
+    }
 }
