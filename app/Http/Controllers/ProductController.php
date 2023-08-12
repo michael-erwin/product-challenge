@@ -28,7 +28,7 @@ class ProductController extends Controller
     public function update(ProductService $productService, ProductUpdateRequest $request, $id)
     {
         $data = $request->all();
-        return $productService->update($id, $data->toArray());
+        return $productService->update($id, $data);
     }
 
     public function destroy(ProductService $productService, $id)
